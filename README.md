@@ -35,9 +35,11 @@ python loghunter.py --ssh samples/auth.log \
                     --out report.html --json findings.json
 ```
 
-افتحي `report.html` في المتصفح. يمكن تشغيل مصدر واحد فقط، مثلاً `--ssh` وحده.
+يُفتح `report.html` في المتصفح. ويمكن تشغيل مصدر واحد فقط، مثلاً `--ssh` وحده.
 
 مثال جاهز للمخرجات: [`sample_report.html`](sample_report.html) (15 اكتشافاً على السجلات التجريبية).
+
+![LogHunter report](report_screenshot.png)
 
 ## صيغ الملفات / Input formats
 
