@@ -213,7 +213,7 @@ def main():
     ap.add_argument("--json", help="مسار اختياري لتصدير JSON")
     a = ap.parse_args()
     if not (a.ssh or a.web or a.win):
-        ap.error("حددي ملف سجلات واحد على الأقل")
+        ap.error("يجب تحديد ملف سجلات واحد على الأقل")
 
     findings, sources = [], []
     for flag, fn, name in ((a.ssh, analyze_ssh, "SSH"), (a.web, analyze_web, "Web"), (a.win, analyze_win, "Windows")):
